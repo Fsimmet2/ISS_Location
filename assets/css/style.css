@@ -1,10 +1,22 @@
 header {
-  height: 100vh;
+  height: 60vh;
   background-size: cover; }
 
 #map {
   height: 80vh;
   width: 100%; }
+
+.astro {
+  padding: 2%; }
+  .astro #astronames {
+    padding: 2%; }
+
+.info {
+  height: 50vh;
+  background-size: cover; }
+
+.def {
+  height: 100vh; }
 
 footer {
   height: 35vh;

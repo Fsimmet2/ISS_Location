@@ -3,13 +3,13 @@ $.getJSON('http://api.open-notify.org/astros.json?callback=?', function(data) {
   $('#spacepeeps').html(number);
 
   data['people'].forEach(function (d) {
-     $('#astronames').append('<li>' + d['name'] + '</li>');
+     $('#astronames').append('<p class="col-lg-4"><img class="img-fluid" src="http://localhost/perso/ISS_Location/assets/img/astronaut.svg" alt="">' + d['name'] + '</p>');
    });
  });
 
  function initMap(){
 
-   var map = new google.maps.Map(document.getElementById('map'), {zoom: 4, draggable: false, disableDefaultUI: true, scrollwheel: false, styles:[
+   var map = new google.maps.Map(document.getElementById('map'), {zoom: 4, draggable: false, draggableCursor:'default',disableDefaultUI: true, scrollwheel: false, styles:[
        {
            "featureType": "all",
            "elementType": "labels",
