@@ -16,14 +16,15 @@
 h3 {
   font-family: 'GlossAndBloom';
   font-size: 4em;
-  padding: 5%; }
+  padding: 5%;
+  text-shadow: 2px 2px #000000; }
 
 header {
   height: 100vh;
   background-size: cover; }
 
 #map {
-  height: 80vh;
+  height: 70vh;
   width: 100%; }
 
 .astro #astronames {
@@ -32,12 +33,13 @@ header {
     font-family: 'Raleway-ExtraBold'; }
 
 .info {
-  height: 50vh;
+  height: 45vh;
   background-size: cover;
   font-family: 'Raleway-ExtraBold';
   color: white; }
   .info .infos {
-    font-size: 3em; }
+    font-size: 3em;
+    text-shadow: 2px 2px #000000; }
 
 .def {
   padding: 2%; }

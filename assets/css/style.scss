@@ -23,7 +23,9 @@ h3{
   font-family: 'GlossAndBloom';
   font-size: 4em;
   padding: 5%;
+  text-shadow: 2px 2px #000000;
 }
+
 
 header{
   height: 100vh;
@@ -31,7 +33,7 @@ header{
 }
 
 #map {
-  height: 80vh;
+  height: 70vh;
   width: 100%;
 }
 
@@ -45,12 +47,13 @@ header{
 }
 
 .info{
-  height: 50vh;
+  height: 45vh;
   background-size: cover;
   font-family: 'Raleway-ExtraBold';
   color: white;
   .infos{
     font-size: 3em;
+    text-shadow: 2px 2px #000000;
   }
 }
 

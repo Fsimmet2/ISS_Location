@@ -3,7 +3,7 @@ $.getJSON('http://api.open-notify.org/astros.json?callback=?', function(data) {
   $('#spacepeeps').html(number);
 
   data['people'].forEach(function (d) {
-     $('#astronames').append('<p class="col-lg-4 name"><img class="img-fluid" src="http://localhost/perso/ISS_Location/assets/img/astronaut.svg" alt=""><br/>' + d['name'] + '</p>');
+     $('#astronames').append('<p class="col-xs-6 col-md-6 col-lg-4 col-xl-4 name text-center"><img class="img-fluid" src="http://localhost/perso/ISS_Location/assets/img/astronaut.svg" alt=""><br/>' + d['name'] + '</p>');
    });
  });
 
@@ -416,3 +416,5 @@ $.getJSON('http://api.open-notify.org/astros.json?callback=?', function(data) {
 
    moveISS();
  }
+
+ 

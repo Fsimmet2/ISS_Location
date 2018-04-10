@@ -6,13 +6,15 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/open-iconic.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="assets/img/satellite.ico" />
   </head>
   <body>
     <!-- HEADER -->
     <header class="parallax-window container-fluid" data-parallax="scroll" data-image-src="assets/img/fondHeader.png"></header>
 
     <!-- MAP -->
-    <section id="map" class="container-fluid"></section>
+    <section id="map" class="container-fluid">
+    </section>
 
     <!-- ASTRONAUTES -->
     <section class="container-fluid astro">
@@ -30,11 +32,19 @@
       <div class="container">
         <h3 class="text-center">L'ISS c'est quoi?</h3>
         <div class="row infos">
-          <p class="col-lg-4">450 Tonnes</p>
-          <p class="col-lg-4">28000 Km/H</p>
-          <span class="oi" data-glyph="align-center" title="icon name" aria-hidden="true"></span>
-
-          <p class="col-lg-4">400km d'altitude</p>
+          <p class="col-xs-12 col-md-12 col-lg-4 col-xl-4 text-center">
+            <span class='numscroller' data-min='1' data-max='400' data-delay='5' data-increment='10'>
+              400</span>km d'altitude
+            <br>
+            <img src="http://localhost/perso/ISS_Location/assets/img/orbit.svg" alt="">
+          </p>
+          <p class="col-xs-12 col-md-12 col-lg-4 col-xl-4 text-center"><span class='numscroller' data-min='1' data-max='28000' data-delay='5' data-increment='100'>
+            28000</span> Km/H <br>
+            <img src="http://localhost/perso/ISS_Location/assets/img/speedometer.svg" alt="">
+          </p>
+          <p class="col-xs-12 col-md-12 col-lg-4 col-xl-4 text-center"><span class='numscroller' data-min='1' data-max='450' data-delay='5' data-increment='10'>
+            450</span> Tonnes <br> <img src="http://localhost/perso/ISS_Location/assets/img/kilograms-weight-.svg" alt=""> 
+          </p>
         </div>
       </div>
 
@@ -43,7 +53,7 @@
     <!-- DEFINITION DATAVIZ -->
     <section class="def">
       <div class="container">
-
+        <h3>International Space Station</h3>
       </div>
     </section>
 
@@ -53,6 +63,7 @@
     <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="assets/js/parallax.js-1.5.0/parallax.min.js"></script>
+    <script type="text/javascript" src="assets/js/numscroller.js"></script>
     <script type="text/javascript" src="assets/js/script.js"></script>
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAi8QzvkOQf0BH9Nc1yKC5wS9cNB4hRWbM&callback=initMap">
