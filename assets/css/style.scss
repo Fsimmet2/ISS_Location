@@ -1,5 +1,32 @@
+@font-face {
+  font-family: 'GlossAndBloom';
+  src: url('http://localhost/perso/ISS_Location/assets/fonts/Gloss_And_Bloom.ttf');
+}
+@font-face {
+  font-family: 'Raleway-Black';
+  src: url('http://localhost/perso/ISS_Location/assets/fonts/Raleway-Black.ttf');
+}
+@font-face {
+  font-family: 'Raleway-ExtraBold';
+  src: url('http://localhost/perso/ISS_Location/assets/fonts/Raleway-ExtraBold.ttf');
+}
+@font-face {
+  font-family: 'Raleway-SemiBold';
+  src: url('http://localhost/perso/ISS_Location/assets/fonts/Raleway-SemiBold.ttf');
+}
+@font-face {
+  font-family: 'Raleway-ExtraLight';
+  src: url('http://localhost/perso/ISS_Location/assets/fonts/Raleway-ExtraLight.ttf');
+}
+
+h3{
+  font-family: 'GlossAndBloom';
+  font-size: 4em;
+  padding: 5%;
+}
+
 header{
-  height: 60vh;
+  height: 100vh;
   background-size: cover;
 }
 
@@ -9,19 +36,26 @@ header{
 }
 
 .astro{
-  padding: 2%;
   #astronames{
     padding: 2%;
+    .name{
+      font-family: 'Raleway-ExtraBold';
+    }
   }
 }
 
 .info{
   height: 50vh;
   background-size: cover;
+  font-family: 'Raleway-ExtraBold';
+  color: white;
+  .infos{
+    font-size: 3em;
+  }
 }
 
 .def{
-  height: 100vh;
+  padding: 2%;
 }
 footer{
   height: 35vh;

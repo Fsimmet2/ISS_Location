@@ -4,11 +4,17 @@
     <meta charset="utf-8">
     <title>ISS</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/open-iconic.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
   </head>
   <body>
+    <!-- HEADER -->
     <header class="parallax-window container-fluid" data-parallax="scroll" data-image-src="assets/img/fondHeader.png"></header>
+
+    <!-- MAP -->
     <section id="map" class="container-fluid"></section>
+
+    <!-- ASTRONAUTES -->
     <section class="container-fluid astro">
       <h3 class="text-center">Les Astronautes</h3>
       <!-- <p id="spacepeeps" class="container"></p> -->
@@ -18,10 +24,30 @@
         </div>
       </div>
     </section>
-    <section class="parallax-window info" data-parallax="scroll" data-image-src="http://localhost/perso/ISS_Location/assets/img/nasa-43563-unsplash.jpg"></section>
-    <section class="def">
+
+    <!-- INFOS -->
+    <section class="container-fluid parallax-window info" data-parallax="scroll" data-image-src="http://localhost/perso/ISS_Location/assets/img/nasa-43563-unsplash.jpg">
+      <div class="container">
+        <h3 class="text-center">L'ISS c'est quoi?</h3>
+        <div class="row infos">
+          <p class="col-lg-4">450 Tonnes</p>
+          <p class="col-lg-4">28000 Km/H</p>
+          <span class="oi" data-glyph="align-center" title="icon name" aria-hidden="true"></span>
+
+          <p class="col-lg-4">400km d'altitude</p>
+        </div>
+      </div>
 
     </section>
+
+    <!-- DEFINITION DATAVIZ -->
+    <section class="def">
+      <div class="container">
+
+      </div>
+    </section>
+
+    <!-- FOOTER -->
     <footer class="parallax-window container-fluid" data-parallax="scroll" data-image-src="assets/img/fondFooter.png"></footer>
 
     <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>

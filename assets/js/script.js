@@ -3,7 +3,7 @@ $.getJSON('http://api.open-notify.org/astros.json?callback=?', function(data) {
   $('#spacepeeps').html(number);
 
   data['people'].forEach(function (d) {
-     $('#astronames').append('<p class="col-lg-4"><img class="img-fluid" src="http://localhost/perso/ISS_Location/assets/img/astronaut.svg" alt="">' + d['name'] + '</p>');
+     $('#astronames').append('<p class="col-lg-4 name"><img class="img-fluid" src="http://localhost/perso/ISS_Location/assets/img/astronaut.svg" alt=""><br/>' + d['name'] + '</p>');
    });
  });
 
