@@ -1,18 +1,18 @@
 @font-face {
   font-family: 'GlossAndBloom';
-  src: url("http://localhost/perso/ISS_Location/assets/fonts/Gloss_And_Bloom.ttf"); }
+  src: url("../fonts/Gloss_And_Bloom.ttf"); }
 @font-face {
   font-family: 'Raleway-Black';
-  src: url("http://localhost/perso/ISS_Location/assets/fonts/Raleway-Black.ttf"); }
+  src: url("../fonts/Raleway-Black.ttf"); }
 @font-face {
   font-family: 'Raleway-ExtraBold';
-  src: url("http://localhost/perso/ISS_Location/assets/fonts/Raleway-ExtraBold.ttf"); }
+  src: url("../fonts/Raleway-ExtraBold.ttf"); }
 @font-face {
   font-family: 'Raleway-SemiBold';
-  src: url("http://localhost/perso/ISS_Location/assets/fonts/Raleway-SemiBold.ttf"); }
+  src: url("../fonts/Raleway-SemiBold.ttf"); }
 @font-face {
   font-family: 'Raleway-ExtraLight';
-  src: url("http://localhost/perso/ISS_Location/assets/fonts/Raleway-ExtraLight.ttf"); }
+  src: url("../fonts/Raleway-ExtraLight.ttf"); }
 h3 {
   font-family: 'GlossAndBloom';
   font-size: 4em;
