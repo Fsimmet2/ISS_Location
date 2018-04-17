@@ -1,11 +1,30 @@
-$.getJSON('http://api.open-notify.org/astros.json?callback=?', function(data) {
-  var number = data['number'];
-  $('#spacepeeps').html(number);
+var cors_api_url = 'https://cors-anywhere.herokuapp.com/';
+var url = 'http://api.open-notify.org/astros.json?callback=?';
+var path = location.pathname;
 
-  data['people'].forEach(function (d) {
-     $('#astronames').append('<p class="col-xs-6 col-md-6 col-lg-4 col-xl-4 name text-center"><img class="img-fluid" src="http://localhost/perso/ISS_Location/assets/img/astronaut.svg" alt=""><br/>' + d['name'] + '</p>');
-   });
- });
+  function doCORSRequest(options, printResult) {
+    var x = new XMLHttpRequest();
+    x.open(options.method, cors_api_url + options.url);
+    x.onload = x.onerror = function() {
+      printResult(
+        (x.response || '')
+      );
+    };
+    x.send(options.data);
+  }
+
+  doCORSRequest({
+          method:'GET',
+          url: 'http://api.open-notify.org/astros.json?callback=?'
+        }, function printResult(data) {
+
+          data = JSON.parse(data.slice(2,data.length -1));
+
+          data['people'].forEach(function (d) {
+             $('#astronames').append("<p class='col-xs-6 col-md-6 col-lg-4 col-xl-4 name text-center'><img class='img-fluid' src='"+ path + "/assets/img/astronaut.svg' alt=''><br/>" + d['name'] + '</p>');
+           });
+        });
+
 
  function initMap(){
 
@@ -401,7 +420,13 @@ $.getJSON('http://api.open-notify.org/astros.json?callback=?', function(data) {
 });
 
    function moveISS () {
-       $.getJSON('http://api.open-notify.org/iss-now.json?callback=?', function(data) {
+
+     doCORSRequest({
+             method:'GET',
+             url: 'http://api.open-notify.org/iss-now.json?callback=?'
+           }, function printResult(data) {
+
+          data = JSON.parse(data.slice(2,data.length -1));
            var lat = parseFloat(data['iss_position']['latitude']);
            var lon = parseFloat(data['iss_position']['longitude']);
 
@@ -411,10 +436,8 @@ $.getJSON('http://api.open-notify.org/astros.json?callback=?', function(data) {
        setTimeout(moveISS, 5000);
    }
 
-   var sat = 'http://localhost/perso/ISS_Location/assets/img/satellite.svg';
+   var sat = path + 'assets/img/satellite.svg';
    var marker = new google.maps.Marker({ map: map, icon: sat});
 
    moveISS();
  }
-
- 
