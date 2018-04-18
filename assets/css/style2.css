@@ -7,7 +7,8 @@ body header {
   background-size: cover;
   margin: 0; }
   body header h1 {
-    color: white; }
+    color: white;
+    font-size: 5em; }
 body #map {
   height: 50vh; }
 

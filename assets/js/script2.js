@@ -15,7 +15,7 @@ function astro(){
 // Append astronauts in html
 function apAstro(tab){
   tab.forEach(function (d) {
-     $('#astronames').append("<p class='col-xs-6 col-md-6 col-lg-4 col-xl-4 name text-center'><img class='img-fluid' src='assets/img/astronaut.svg' alt=''><br/>" + d['name'] + '</p>');
+     $('#astronames').append("<p class='col-xs-12 col-md-6 col-lg-4 col-xl-4 name text-center'><img class='img-fluid' src='assets/img/astronaut.svg' alt=''><br/>" + d['name'] + '</p>');
    });
 }
 
@@ -63,5 +63,7 @@ function apAstro(tab){
  $.getJSON('https://api.wheretheiss.at/v1/satellites/25544', function(data) {
    var alt = Math.round(data.altitude);
    var vel = Math.round(data.velocity);
+   $("#alt").append(alt);
+   $("#vel").append(vel);
 
  })
