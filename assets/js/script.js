@@ -421,14 +421,11 @@ var path = location.pathname;
 
    function moveISS () {
 
-     doCORSRequest({
-             method:'GET',
-             url: 'http://api.open-notify.org/iss-now.json?callback=?'
-           }, function printResult(data) {
+  $.getJSON('https://api.wheretheiss.at/v1/satellites/25544', function(data) {
 
-          data = JSON.parse(data.slice(2,data.length -1));
-           var lat = parseFloat(data['iss_position']['latitude']);
-           var lon = parseFloat(data['iss_position']['longitude']);
+          //data = JSON.parse(data.slice(2,data.length -1));
+           var lat = parseFloat(data['latitude']);
+           var lon = parseFloat(data['longitude']);
 
            map.setCenter(new google.maps.LatLng(lat, lon));
            marker.setPosition(new google.maps.LatLng(lat, lon));
