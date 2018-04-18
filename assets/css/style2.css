@@ -1,0 +1,14 @@
+.container-fluid {
+  padding: 0; }
+
+body header {
+  background-image: url("../img/header.jpg");
+  height: 70vh;
+  background-size: cover;
+  margin: 0; }
+  body header h1 {
+    color: white; }
+body #map {
+  height: 50vh; }
+
+/*# sourceMappingURL=style2.css.map */
