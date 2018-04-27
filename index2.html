@@ -6,19 +6,23 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style2.css">
     <link rel="icon" href="assets/img/satellite.ico" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
   </head>
   <body class="container-fluid">
     <!-- Header -->
-    <header class="row">
-      <div class="d-flex align-items-center col-12 col-xs-12 col-md-12 col-lg-12 col-xl-12">
-        <h1 class="text-center col">International Space Station</h1>
-      </div>
+    <header>
+        <h1 class="text-center col text-flicker-in-glow">
+          International Space Station
+        </h1>
+        <a class="js-scrollTo" href="#map">
+          <div id="arrow-down">
+            <i class="fa fa-chevron-down"></i>
+          </div>
+        </a>
     </header>
 
     <!-- Map -->
-    <section id="map">
-
-    </section>
+    <div id="map"></div>
 
     <!-- Astronautes -->
     <section class="container">
@@ -26,25 +30,26 @@
         <h3 class="text-center col-xs-12 col-md-12 col-lg-12 col-xl-12">Astronautes</h3>
       </div>
       <div class="row" id="astronames">
-
       </div>
     </section>
 
     <!-- Infos -->
-    <section class="container">
+    <section class="infos">
+      <div class="container">
       <div class="row">
-        <h3 class="text-center col-xs-12 col-md-12 col-lg-12 col-xl-12">Infos</h3>
+        <p class="col-xs-12 col-md-4 col-lg-4 col-xl-4 text-center">
+          <span id="alt"></span>km d'altitude <br>
+          <img class="orbit" src="assets/img/orbit.svg" alt="orbit svg">
+        </p>
+        <p class="col-xs-12 col-md-4 col-lg-4 col-xl-4 text-center">
+          <span id="vel"></span> Km/H <br>
+          <img src="assets/img/speedometer.svg" alt="speed svg">
+        </p>
+        <p class="col-xs-12 col-md-4 col-lg-4 col-xl-4 text-center">
+          <span>450</span> Tonnes <br>
+          <img src="assets/img/kilograms-weight-.svg" alt="weight svg">
+        </p>
       </div>
-      <div class="row">
-        <p class="col-xs-12 col-md-4 col-lg-4 col-xl-4 text-center">
-          <span id="alt"></span>km d'altitude
-        </p>
-        <p class="col-xs-12 col-md-4 col-lg-4 col-xl-4 text-center">
-          <span id="vel"></span> Km/H
-        </p>
-        <p class="col-xs-12 col-md-4 col-lg-4 col-xl-4 text-center">
-          <span>450</span> Tonnes
-        </p>
       </div>
     </section>
 

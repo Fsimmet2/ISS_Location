@@ -39,7 +39,97 @@ function apAstro(tab){
 
  function initMap(){
 
-   var map = new google.maps.Map(document.getElementById('map'), {zoom: 4, draggable: false, draggableCursor:'default',disableDefaultUI: true, scrollwheel: false});
+   var map = new google.maps.Map(document.getElementById('map'), {zoom: 4, draggable: false, draggableCursor:'default',disableDefaultUI: true, scrollwheel: false, styles:
+
+   [
+       {
+           "featureType": "administrative",
+           "elementType": "geometry.stroke",
+           "stylers": [
+               {
+                   "visibility": "off"
+               }
+           ]
+       },
+       {
+           "featureType": "administrative",
+           "elementType": "labels.text.fill",
+           "stylers": [
+               {
+                   "color": "#303030"
+               }
+           ]
+       },
+       {
+           "featureType": "landscape",
+           "elementType": "all",
+           "stylers": [
+               {
+                   "color": "#f2f2f2"
+               }
+           ]
+       },
+       {
+           "featureType": "poi",
+           "elementType": "all",
+           "stylers": [
+               {
+                   "visibility": "off"
+               }
+           ]
+       },
+       {
+           "featureType": "road",
+           "elementType": "all",
+           "stylers": [
+               {
+                   "saturation": -100
+               },
+               {
+                   "lightness": 45
+               }
+           ]
+       },
+       {
+           "featureType": "road.highway",
+           "elementType": "all",
+           "stylers": [
+               {
+                   "visibility": "simplified"
+               }
+           ]
+       },
+       {
+           "featureType": "road.arterial",
+           "elementType": "labels.icon",
+           "stylers": [
+               {
+                   "visibility": "off"
+               }
+           ]
+       },
+       {
+           "featureType": "transit",
+           "elementType": "all",
+           "stylers": [
+               {
+                   "visibility": "off"
+               }
+           ]
+       },
+       {
+           "featureType": "water",
+           "elementType": "all",
+           "stylers": [
+               {
+                   "color": "#ebd2a6"
+               },
+               {
+                   "visibility": "on"
+               }
+           ]
+       }
+   ]});
 
    function moveISS () {
 
@@ -67,3 +157,12 @@ function apAstro(tab){
    $("#vel").append(vel);
 
  })
+
+ $(document).ready(function() {
+ 		$('.js-scrollTo').on('click', function() { // Au clic sur un élément
+ 			var page = $(this).attr('href'); // Page cible
+ 			var speed = 750; // Durée de l'animation (en ms)
+ 			$('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+ 			return false;
+ 		});
+ 	});
