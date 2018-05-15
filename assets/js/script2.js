@@ -15,7 +15,7 @@ function astro(){
 // Append astronauts in html
 function apAstro(tab){
   tab.forEach(d => {
-     $('#astronames').append("<p class='col-xs-12 col-md-6 col-lg-4 col-xl-4 name text-center'><img class='img-fluid' src='assets/img/astronaut.svg' alt=''><br/>" + d['name'] + '</p>');
+     $('#astronames').append("<p class='col-xs-12 col-md-6 col-lg-4 col-xl-4 name text-center'><img class='img-fluid' src='assets/img/astronaut.svg' alt=''><br/><a class='button' target='_blank' href='https://en.wikipedia.org/wiki/"+d['name'].replace(" ", '_')+"'><i class='fas fa-info-circle fa-2x'></i></a>" + d['name'] + '</p>');
    });
 }
 
@@ -171,3 +171,8 @@ function apAstro(tab){
  			return false;
  		});
  	});
+
+window.sr = ScrollReveal({duration : 2000});
+sr.reveal('.astros');
+sr.reveal('.infos');
+sr.reveal('.def');

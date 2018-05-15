@@ -31,10 +31,38 @@ body {
         color: #e7a771; }
   body #map {
     height: 90vh; }
+  body .astros .astro {
+    padding-bottom: 5%; }
   body .infos {
-    background-color: #929292; }
-    body .infos .orbit:hover {
-      color: red; }
+    background-image: url("../img/nasa-43563-unsplash.jpg");
+    background-size: cover;
+    color: white;
+    font-size: 2em; }
+  body .def h5 {
+    padding-top: 3%; }
+  body .def ul {
+    list-style: none;
+    display: flex;
+    flex-flow: wrap; }
+    body .def ul li {
+      padding: 3%; }
+      body .def ul li p {
+        margin: 0; }
+  body footer {
+    color: white;
+    padding-top: 1%;
+    background-image: url("../img/fondFooter.png");
+    background-size: cover; }
+    body footer h5 {
+      padding-bottom: 2%; }
+    body footer .reseaux {
+      padding-bottom: 2%; }
+    body footer .copy p {
+      margin: 0; }
+    body footer a {
+      color: inherit; }
+    body footer a:hover {
+      color: #e7a771; }
 
 @keyframes jump {
   0% {

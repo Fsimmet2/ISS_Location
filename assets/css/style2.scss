@@ -43,10 +43,55 @@ body{
   #map{
     height: 90vh;
   }
+  .astros{
+    .astro{
+      padding-bottom: 5%;
+    }
+  }
   .infos{
-    background-color: #929292;
-    .orbit:hover{
-      color: red;
+    background-image: url('../img/nasa-43563-unsplash.jpg');
+    background-size: cover;
+    color: white;
+    font-size: 2em;
+  }
+  .def{
+    h5{
+      padding-top: 3%;
+    }
+    ul{
+      list-style: none;
+      display: flex;
+      flex-flow: wrap;
+      li{
+        padding: 3%;
+        p{
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  footer{
+    color: white;
+    padding-top: 1%;
+    background-image: url('../img/fondFooter.png');
+    background-size: cover;
+    h5{
+      padding-bottom: 2%;
+    }
+    .reseaux{
+      padding-bottom: 2%;
+    }
+    .copy{
+      p{
+        margin: 0;
+      }
+    }
+    a{
+      color: inherit;
+    }
+    a:hover{
+      color: rgb(231,167,113);
     }
   }
 }
